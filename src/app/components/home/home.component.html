@@ -1,0 +1,6 @@
+@for (note of notifications; track $index){
+    <div class="container d-flex justify-content-around my-5">
+        <h3>{{note}}</h3>
+        <button class="btn bg-danger" (click)="deleteNote($index)">Delete</button>
+    </div>
+}
